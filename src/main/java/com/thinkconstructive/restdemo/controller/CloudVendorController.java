@@ -1,7 +1,10 @@
 package com.thinkconstructive.restdemo.controller;
 
 import com.thinkconstructive.restdemo.model.CloudVendor;
+import com.thinkconstructive.restdemo.response.ResponseHandler;
 import com.thinkconstructive.restdemo.service.CloudVendorService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -16,8 +19,11 @@ public class CloudVendorController {
     }
 
     @GetMapping("get/{vendorId}")
-    public CloudVendor getCloudVendorDetails(@PathVariable("vendorId") String vendorId){
-        return cloudVendorService.getCloudVendor(vendorId);
+    public ResponseEntity<Object> getCloudVendorDetails(@PathVariable("vendorId") String vendorId){
+        return ResponseHandler.responseBuilder(
+                "Requested CloudVendor is given here.",
+                HttpStatus.OK,
+                cloudVendorService.getCloudVendor(vendorId));
     }
     @GetMapping("/get")
     public List<CloudVendor> getAllCloudVendors(){
