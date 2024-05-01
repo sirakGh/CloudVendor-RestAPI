@@ -1,20 +1,19 @@
 package com.thinkconstructive.restdemo.controller;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.thinkconstructive.restdemo.model.CloudVendor;
 import com.thinkconstructive.restdemo.service.CloudVendorService;
-import jakarta.inject.Inject;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.ArrayList;
 import java.util.List;
-
 
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -28,6 +27,9 @@ class CloudVendorControllerTest {
 
     @MockBean
     private CloudVendorService cloudVendorService;
+
+    @Autowired
+    ObjectMapper objectMapper;
 
     CloudVendor cloudVendor1;
     CloudVendor cloudVendor2;
@@ -59,11 +61,19 @@ class CloudVendorControllerTest {
     }
 
     @Test
-    void createCloudVendorDetails() {
+    void createCloudVendorDetails() throws Exception {
+        when(cloudVendorService.createCloudVender(cloudVendor2)).thenReturn("Success");
+        mockMvc.perform(post("/cloudvendor/add")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(cloudVendor2))).andDo(print()).andExpect(status().isOk());
     }
 
     @Test
-    void updatedCloudVendorDetails() {
+    void updatedCloudVendorDetails() throws Exception {
+        when(cloudVendorService.updateCloudVendor(cloudVendor2)).thenReturn("Success");
+        mockMvc.perform(put("/cloudvendor/update")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(cloudVendor2))).andDo(print()).andExpect(status().isOk());
     }
 
     @Test
