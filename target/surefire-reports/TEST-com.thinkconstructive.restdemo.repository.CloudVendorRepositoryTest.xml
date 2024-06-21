@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.thinkconstructive.restdemo.repository.CloudVendorRepositoryTest" time="1.878" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/sirakmcpro/Desktop/Local Repo/rest-demo/target/test-classes:/Users/sirakmcpro/Desktop/Local Repo/rest-demo/target/classes:/Users/sirakmcpro/.m2/repository/org/springframework/data/spring-data-jpa/3.2.2/spring-data-jpa-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/data/spring-data-commons/3.2.2/spring-data-commons-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-orm/6.1.3/spring-orm-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-jdbc/6.1.3/spring-jdbc-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-context/6.1.3/spring-context-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-tx/6.1.3/spring-tx-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/sirakmcpro/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/sirakmcpro/.m2/repository/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.jar:/Users/sirakmcpro/.m2/repository/mysql/mysql-connector-java/8.0.27/mysql-connector-java-8.0.27.jar:/Users/sirakmcpro/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/sirakmcpro/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.2/spring-boot-starter-test-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.jar:/Users/sirakmcpro/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/sirakmcpro/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/sirakmcpro/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/sirakmcpro/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/sirakmcpro/.m2/repository/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar:/Users/sirakmcpro/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-test/3.2.2/spring-boot-test-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.2/spring-boot-test-autoconfigure-3.2.2.jar:/Users/sirakmcpro/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/sirakmcpro/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/sirakmcpro/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/sirakmcpro/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/sirakmcpro/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/sirakmcpro/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/sirakmcpro/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/sirakmcpro/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/Users/sirakmcpro/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/sirakmcpro/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/sirakmcpro/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/sirakmcpro/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/sirakmcpro/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/sirakmcpro/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/sirakmcpro/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sirakmcpro/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/sirakmcpro/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/sirakmcpro/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/sirakmcpro/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/sirakmcpro/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar:/Users/sirakmcpro/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/sirakmcpro/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/sirakmcpro/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/sirakmcpro/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-test/6.1.3/spring-test-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.2/spring-boot-starter-data-jpa-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.2/spring-boot-starter-aop-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.2/spring-boot-starter-jdbc-3.2.2.jar:/Users/sirakmcpro/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/sirakmcpro/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar:/Users/sirakmcpro/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/sirakmcpro/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/sirakmcpro/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/sirakmcpro/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/sirakmcpro/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/sirakmcpro/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/Users/sirakmcpro/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/Users/sirakmcpro/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/Users/sirakmcpro/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/Users/sirakmcpro/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/sirakmcpro/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-aspects/6.1.3/spring-aspects-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.2/spring-boot-starter-web-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.2/spring-boot-starter-json-3.2.2.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.2/spring-boot-starter-tomcat-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.jar:/Users/sirakmcpro/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.18/tomcat-embed-el-10.1.18.jar:/Users/sirakmcpro/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.18/tomcat-embed-websocket-10.1.18.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-web/6.1.3/spring-web-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-webmvc/6.1.3/spring-webmvc-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.2.2/spring-boot-starter-actuator-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.2.2/spring-boot-actuator-autoconfigure-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-actuator/3.2.2/spring-boot-actuator-3.2.2.jar:/Users/sirakmcpro/.m2/repository/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar:/Users/sirakmcpro/.m2/repository/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar:/Users/sirakmcpro/.m2/repository/io/micrometer/micrometer-jakarta9/1.12.2/micrometer-jakarta9-1.12.2.jar:/Users/sirakmcpro/.m2/repository/io/micrometer/micrometer-core/1.12.2/micrometer-core-1.12.2.jar:/Users/sirakmcpro/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/sirakmcpro/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-boot-starter/3.0.0/springfox-boot-starter-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-oas/3.0.0/springfox-oas-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.2/swagger-annotations-2.1.2.jar:/Users/sirakmcpro/.m2/repository/io/swagger/core/v3/swagger-models/2.1.2/swagger-models-2.1.2.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-core/3.0.0/springfox-core-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-data-rest/3.0.0/springfox-data-rest-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-bean-validators/3.0.0/springfox-bean-validators-3.0.0.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/sirakmcpro/.m2/repository/org/springframework/plugin/spring-plugin-core/2.0.0.RELEASE/spring-plugin-core-2.0.0.RELEASE.jar:/Users/sirakmcpro/.m2/repository/org/springframework/plugin/spring-plugin-metadata/2.0.0.RELEASE/spring-plugin-metadata-2.0.0.RELEASE.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-swagger2/3.0.0/springfox-swagger2-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-spi/3.0.0/springfox-spi-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-schema/3.0.0/springfox-schema-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-swagger-common/3.0.0/springfox-swagger-common-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-spring-web/3.0.0/springfox-spring-web-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/github/classgraph/classgraph/4.8.83/classgraph-4.8.83.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-spring-webflux/3.0.0/springfox-spring-webflux-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar:/Users/sirakmcpro/.m2/repository/io/swagger/swagger-models/1.5.20/swagger-models-1.5.20.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/sirakmcpro/.m2/repository/org/mapstruct/mapstruct/1.3.1.Final/mapstruct-1.3.1.Final.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-swagger-ui/3.0.0/springfox-swagger-ui-3.0.0.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/sirakmcpro/Desktop/Local Repo/rest-demo/target/surefire/surefirebooter-20240620163957344_3.jar /Users/sirakmcpro/Desktop/Local Repo/rest-demo/target/surefire 2024-06-20T16-39-57_303-jvmRun1 surefire-20240620163957344_1tmp surefire_0-20240620163957344_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/sirakmcpro/Desktop/Local Repo/rest-demo/target/test-classes:/Users/sirakmcpro/Desktop/Local Repo/rest-demo/target/classes:/Users/sirakmcpro/.m2/repository/org/springframework/data/spring-data-jpa/3.2.2/spring-data-jpa-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/data/spring-data-commons/3.2.2/spring-data-commons-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-orm/6.1.3/spring-orm-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-jdbc/6.1.3/spring-jdbc-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-context/6.1.3/spring-context-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-expression/6.1.3/spring-expression-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-aop/6.1.3/spring-aop-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-tx/6.1.3/spring-tx-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-beans/6.1.3/spring-beans-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-core/6.1.3/spring-core-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-jcl/6.1.3/spring-jcl-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/sirakmcpro/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/Users/sirakmcpro/.m2/repository/org/slf4j/slf4j-api/2.0.11/slf4j-api-2.0.11.jar:/Users/sirakmcpro/.m2/repository/mysql/mysql-connector-java/8.0.27/mysql-connector-java-8.0.27.jar:/Users/sirakmcpro/.m2/repository/com/google/protobuf/protobuf-java/3.11.4/protobuf-java-3.11.4.jar:/Users/sirakmcpro/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.2/spring-boot-starter-test-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.2/spring-boot-starter-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot/3.2.2/spring-boot-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.2/spring-boot-autoconfigure-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.2/spring-boot-starter-logging-3.2.2.jar:/Users/sirakmcpro/.m2/repository/ch/qos/logback/logback-classic/1.4.14/logback-classic-1.4.14.jar:/Users/sirakmcpro/.m2/repository/ch/qos/logback/logback-core/1.4.14/logback-core-1.4.14.jar:/Users/sirakmcpro/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/Users/sirakmcpro/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/Users/sirakmcpro/.m2/repository/org/slf4j/jul-to-slf4j/2.0.11/jul-to-slf4j-2.0.11.jar:/Users/sirakmcpro/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-test/3.2.2/spring-boot-test-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.2/spring-boot-test-autoconfigure-3.2.2.jar:/Users/sirakmcpro/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/Users/sirakmcpro/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/Users/sirakmcpro/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/Users/sirakmcpro/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/Users/sirakmcpro/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/Users/sirakmcpro/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/Users/sirakmcpro/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/Users/sirakmcpro/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar:/Users/sirakmcpro/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/Users/sirakmcpro/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/sirakmcpro/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/Users/sirakmcpro/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/Users/sirakmcpro/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/sirakmcpro/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/Users/sirakmcpro/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/sirakmcpro/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/Users/sirakmcpro/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/Users/sirakmcpro/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/Users/sirakmcpro/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/sirakmcpro/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.11/byte-buddy-agent-1.14.11.jar:/Users/sirakmcpro/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/sirakmcpro/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/sirakmcpro/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/Users/sirakmcpro/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-test/6.1.3/spring-test-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.2/spring-boot-starter-data-jpa-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.2/spring-boot-starter-aop-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/aspectj/aspectjweaver/1.9.21/aspectjweaver-1.9.21.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.2/spring-boot-starter-jdbc-3.2.2.jar:/Users/sirakmcpro/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/Users/sirakmcpro/.m2/repository/org/hibernate/orm/hibernate-core/6.4.1.Final/hibernate-core-6.4.1.Final.jar:/Users/sirakmcpro/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/sirakmcpro/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/sirakmcpro/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/Users/sirakmcpro/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/sirakmcpro/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/sirakmcpro/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/Users/sirakmcpro/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/Users/sirakmcpro/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/Users/sirakmcpro/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/Users/sirakmcpro/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/Users/sirakmcpro/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-aspects/6.1.3/spring-aspects-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.2/spring-boot-starter-web-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.2/spring-boot-starter-json-3.2.2.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.2/spring-boot-starter-tomcat-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.18/tomcat-embed-core-10.1.18.jar:/Users/sirakmcpro/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.18/tomcat-embed-el-10.1.18.jar:/Users/sirakmcpro/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.18/tomcat-embed-websocket-10.1.18.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-web/6.1.3/spring-web-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/spring-webmvc/6.1.3/spring-webmvc-6.1.3.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-starter-actuator/3.2.2/spring-boot-starter-actuator-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/3.2.2/spring-boot-actuator-autoconfigure-3.2.2.jar:/Users/sirakmcpro/.m2/repository/org/springframework/boot/spring-boot-actuator/3.2.2/spring-boot-actuator-3.2.2.jar:/Users/sirakmcpro/.m2/repository/io/micrometer/micrometer-observation/1.12.2/micrometer-observation-1.12.2.jar:/Users/sirakmcpro/.m2/repository/io/micrometer/micrometer-commons/1.12.2/micrometer-commons-1.12.2.jar:/Users/sirakmcpro/.m2/repository/io/micrometer/micrometer-jakarta9/1.12.2/micrometer-jakarta9-1.12.2.jar:/Users/sirakmcpro/.m2/repository/io/micrometer/micrometer-core/1.12.2/micrometer-core-1.12.2.jar:/Users/sirakmcpro/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/Users/sirakmcpro/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-boot-starter/3.0.0/springfox-boot-starter-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-oas/3.0.0/springfox-oas-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.2/swagger-annotations-2.1.2.jar:/Users/sirakmcpro/.m2/repository/io/swagger/core/v3/swagger-models/2.1.2/swagger-models-2.1.2.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-core/3.0.0/springfox-core-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-data-rest/3.0.0/springfox-data-rest-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-bean-validators/3.0.0/springfox-bean-validators-3.0.0.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/Users/sirakmcpro/.m2/repository/org/springframework/plugin/spring-plugin-core/2.0.0.RELEASE/spring-plugin-core-2.0.0.RELEASE.jar:/Users/sirakmcpro/.m2/repository/org/springframework/plugin/spring-plugin-metadata/2.0.0.RELEASE/spring-plugin-metadata-2.0.0.RELEASE.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-swagger2/3.0.0/springfox-swagger2-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-spi/3.0.0/springfox-spi-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-schema/3.0.0/springfox-schema-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-swagger-common/3.0.0/springfox-swagger-common-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-spring-web/3.0.0/springfox-spring-web-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/github/classgraph/classgraph/4.8.83/classgraph-4.8.83.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-spring-webflux/3.0.0/springfox-spring-webflux-3.0.0.jar:/Users/sirakmcpro/.m2/repository/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar:/Users/sirakmcpro/.m2/repository/io/swagger/swagger-models/1.5.20/swagger-models-1.5.20.jar:/Users/sirakmcpro/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/Users/sirakmcpro/.m2/repository/org/mapstruct/mapstruct/1.3.1.Final/mapstruct-1.3.1.Final.jar:/Users/sirakmcpro/.m2/repository/io/springfox/springfox-swagger-ui/3.0.0/springfox-swagger-ui-3.0.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/sirakmcpro"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/sirakmcpro/Desktop/Local Repo/rest-demo"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="/Users/sirakmcpro/Desktop/Local Repo/rest-demo/target/surefire/surefirebooter-20240620163957344_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
+    <property name="user.name" value="sirakmcpro"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/sirakmcpro/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/l5/b6f2qyvs6tjgvgrzx14sdrtm0000gn/T/"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="user.dir" value="/Users/sirakmcpro/Desktop/Local Repo/rest-demo"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="3854"/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/sirakmcpro/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.8+9-LTS-211"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[rest-demo] "/>
+  </properties>
+  <testcase name="testFindByVendorName_NotFound" classname="com.thinkconstructive.restdemo.repository.CloudVendorRepositoryTest" time="0.415">
+    <system-out><![CDATA[16:39:57.707 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.thinkconstructive.restdemo.repository.CloudVendorRepositoryTest]: CloudVendorRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:39:57.760 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.thinkconstructive.restdemo.RestDemoApplication for test class com.thinkconstructive.restdemo.repository.CloudVendorRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2024-06-20T16:39:58.006-04:00  INFO 3854 --- [rest-demo] [           main] c.t.r.r.CloudVendorRepositoryTest        : Starting CloudVendorRepositoryTest using Java 17.0.8 with PID 3854 (started by sirakmcpro in /Users/sirakmcpro/Desktop/Local Repo/rest-demo)
+2024-06-20T16:39:58.006-04:00  INFO 3854 --- [rest-demo] [           main] c.t.r.r.CloudVendorRepositoryTest        : No active profile set, falling back to 1 default profile: "default"
+2024-06-20T16:39:58.007-04:00 DEBUG 3854 --- [rest-demo] [           main] o.s.boot.SpringApplication               : Loading source class com.thinkconstructive.restdemo.RestDemoApplication
+2024-06-20T16:39:58.171-04:00  INFO 3854 --- [rest-demo] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-20T16:39:58.178-04:00 DEBUG 3854 --- [rest-demo] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.thinkconstructive.restdemo'. Automatic @Repository and @Entity scanning is enabled.
+2024-06-20T16:39:58.197-04:00  INFO 3854 --- [rest-demo] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 JPA repository interface.
+2024-06-20T16:39:58.220-04:00  INFO 3854 --- [rest-demo] [           main] beddedDataSourceBeanFactoryPostProcessor : Replacing 'dataSource' DataSource bean with embedded version
+2024-06-20T16:39:58.284-04:00  INFO 3854 --- [rest-demo] [           main] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:96e0982f-a410-4e89-9ada-447f5ae8ec5e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-06-20T16:39:58.401-04:00  INFO 3854 --- [rest-demo] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-20T16:39:58.425-04:00  INFO 3854 --- [rest-demo] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-06-20T16:39:58.437-04:00  INFO 3854 --- [rest-demo] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-20T16:39:58.519-04:00  INFO 3854 --- [rest-demo] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-20T16:39:58.888-04:00  INFO 3854 --- [rest-demo] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-20T16:39:58.905-04:00 DEBUG 3854 --- [rest-demo] [           main] org.hibernate.SQL                        : create table cloud_vendor_info (vendor_id varchar(255) not null, vendor_address varchar(255), vendor_name varchar(255), vendor_phone_number varchar(255), primary key (vendor_id))
+Hibernate: create table cloud_vendor_info (vendor_id varchar(255) not null, vendor_address varchar(255), vendor_name varchar(255), vendor_phone_number varchar(255), primary key (vendor_id))
+2024-06-20T16:39:58.908-04:00  INFO 3854 --- [rest-demo] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-20T16:39:59.073-04:00 DEBUG 3854 --- [rest-demo] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   DataSourceAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType' (OnClassCondition)
+      - @ConditionalOnMissingBean (types: io.r2dbc.spi.ConnectionFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.PooledDataSourceAvailable PooledDataSource found supported DataSource; NestedCondition on DataSourceAutoConfiguration.PooledDataSourceCondition.ExplicitType @ConditionalOnProperty (spring.datasource.type) did not find property 'type' (DataSourceAutoConfiguration.PooledDataSourceCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource,javax.sql.XADataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceAutoConfiguration.PooledDataSourceConfiguration#jdbcConnectionDetails matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.jdbc.JdbcConnectionDetails; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceConfiguration.Hikari matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+      - @ConditionalOnProperty (spring.datasource.type=com.zaxxer.hikari.HikariDataSource) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: javax.sql.DataSource; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourceInitializationConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.jdbc.datasource.init.DatabasePopulator' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.sql.init.SqlDataSourceScriptDatabaseInitializer,org.springframework.boot.autoconfigure.sql.init.SqlR2dbcScriptDatabaseInitializer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.HikariPoolDataSourceMetadataProviderConfiguration matched:
+      - @ConditionalOnClass found required class 'com.zaxxer.hikari.HikariDataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.jdbc.core.JdbcTemplate', 'org.springframework.transaction.TransactionManager' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   HibernateJpaAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean', 'jakarta.persistence.EntityManager', 'org.hibernate.engine.spi.SessionImplementor' (OnClassCondition)
+
+   HibernateJpaConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   JdbcClientAutoConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate; SearchStrategy: all) found a single bean 'namedParameterJdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.simple.JdbcClient; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JdbcTemplateAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'javax.sql.DataSource', 'org.springframework.jdbc.core.JdbcTemplate' (OnClassCondition)
+      - @ConditionalOnSingleCandidate (types: javax.sql.DataSource; SearchStrategy: all) found a single bean 'dataSource' (OnBeanCondition)
+
+   JdbcTemplateConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.jdbc.core.JdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean,jakarta.persistence.EntityManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#entityManagerFactoryBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.orm.jpa.EntityManagerFactoryBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#jpaVendorAdapter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.JpaVendorAdapter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration#transactionManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.PersistenceManagedTypesConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean,jakarta.persistence.EntityManagerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaBaseConfiguration.PersistenceManagedTypesConfiguration#persistenceManagedTypes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.orm.jpa.persistenceunit.PersistenceManagedTypes; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JpaRepositoriesAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.data.jpa.repository.JpaRepository' (OnClassCondition)
+      - @ConditionalOnProperty (spring.data.jpa.repositories.enabled=true) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: javax.sql.DataSource; SearchStrategy: all) found bean 'dataSource'; @ConditionalOnMissingBean (types: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NamedParameterJdbcTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.jdbc.core.JdbcTemplate; SearchStrategy: all) found a single bean 'jdbcTemplate'; @ConditionalOnMissingBean (types: org.springframework.jdbc.core.namedparam.NamedParameterJdbcOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration NONE cache type (CacheCondition)
+
+   SqlInitializationAutoConfiguration matched:
+      - @ConditionalOnProperty (spring.sql.init.enabled) matched (OnPropertyCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on SqlInitializationAutoConfiguration.SqlInitializationModeCondition.ModeIsNever @ConditionalOnProperty (spring.sql.init.mode=never) did not find property 'mode' (SqlInitializationAutoConfiguration.SqlInitializationModeCondition)
+
+   TestDatabaseAutoConfiguration#embeddedDataSourceBeanFactoryPostProcessor matched:
+      - @ConditionalOnProperty (spring.test.database.replace=ANY) matched (OnPropertyCondition)
+
+   TestEntityManagerAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'jakarta.persistence.EntityManagerFactory' (OnClassCondition)
+
+   TestEntityManagerAutoConfiguration#testEntityManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.transaction.PlatformTransactionManager' (OnClassCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found bean 'transactionManager'; @ConditionalOnMissingBean (types: org.springframework.transaction.annotation.AbstractTransactionManagementConfiguration; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.CglibAutoProxyConfiguration matched:
+      - @ConditionalOnProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration matched:
+      - @ConditionalOnSingleCandidate (types: org.springframework.transaction.PlatformTransactionManager; SearchStrategy: all) found a single bean 'transactionManager' (OnBeanCondition)
+
+   TransactionAutoConfiguration.TransactionTemplateConfiguration#transactionTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.transaction.support.TransactionOperations; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   Cache2kCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.cache2k.Cache2kBuilder' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerEntityManagerFactoryDependsOnPostProcessor:
+      Did not match:
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.github.benmanes.caffeine.cache.Caffeine' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   DataSourceAutoConfiguration.EmbeddedDatabaseConfiguration:
+      Did not match:
+         - EmbeddedDataSource spring.datasource.url is set (DataSourceAutoConfiguration.EmbeddedDatabaseCondition)
+
+   DataSourceCheckpointRestoreConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.crac.Resource' (OnClassCondition)
+
+   DataSourceConfiguration.Dbcp2:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourceConfiguration.Generic:
+      Did not match:
+         - @ConditionalOnProperty (spring.datasource.type) did not find property 'spring.datasource.type' (OnPropertyCondition)
+
+   DataSourceConfiguration.OracleUcp:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSourceImpl', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourceConfiguration.Tomcat:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceJmxConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.jmx.enabled=true) found different value in property 'enabled' (OnPropertyCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.CommonsDbcp2PoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.commons.dbcp2.BasicDataSource' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.OracleUcpPoolDataSourceMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'oracle.ucp.jdbc.PoolDataSource', 'oracle.jdbc.OracleConnection' (OnClassCondition)
+
+   DataSourcePoolMetadataProvidersConfiguration.TomcatDataSourcePoolMetadataProviderConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.apache.tomcat.jdbc.pool.DataSource' (OnClassCondition)
+
+   DataSourceTransactionManagerAutoConfiguration.JdbcTransactionManagerConfiguration#transactionManager:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.transaction.TransactionManager; SearchStrategy: all) found beans of type 'org.springframework.transaction.TransactionManager' transactionManager (OnBeanCondition)
+
+   FlywayAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.flywaydb.core.Flyway' (OnClassCondition)
+
+   GenericCacheConfiguration:
+      Did not match:
+         - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration unknown cache type (CacheCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.embedded.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.cache.Caching' (OnClassCondition)
+
+   JpaBaseConfiguration.JpaWebConfiguration:
+      Did not match:
+         - not a servlet web application (OnWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+
+   JpaRepositoriesAutoConfiguration#entityManagerFactoryBootstrapExecutorCustomizer:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.LazyBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=lazy) found different value in property 'bootstrap-mode'; NestedCondition on JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition.DeferredBootstrapMode @ConditionalOnProperty (spring.data.jpa.repositories.bootstrap-mode=deferred) found different value in property 'bootstrap-mode' (JpaRepositoriesAutoConfiguration.BootstrapExecutorCondition)
+
+   LiquibaseAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'liquibase.change.DatabaseChange' (OnClassCondition)
+
+   R2dbcInitializationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required classes 'io.r2dbc.spi.ConnectionFactory', 'org.springframework.r2dbc.connection.init.DatabasePopulator' (OnClassCondition)
+
+   RedisCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+
+   SimpleCacheConfiguration:
+      Did not match:
+         - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration unknown cache type (CacheCondition)
+
+   TestDatabaseAutoConfiguration#dataSource:
+      Did not match:
+         - @ConditionalOnProperty (spring.test.database.replace=AUTO_CONFIGURED) did not find property 'replace' (OnPropertyCondition)
+
+   TransactionAutoConfiguration#transactionalOperator:
+      Did not match:
+         - @ConditionalOnSingleCandidate (types: org.springframework.transaction.ReactiveTransactionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TransactionAutoConfiguration.AspectJTransactionManagementConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.transaction.aspectj.AbstractTransactionAspect; SearchStrategy: all) did not find any beans of type org.springframework.transaction.aspectj.AbstractTransactionAspect (OnBeanCondition)
+
+   TransactionAutoConfiguration.EnableTransactionManagementConfiguration.JdkDynamicAutoProxyConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.aop.proxy-target-class=false) did not find property 'proxy-target-class' (OnPropertyCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.test.autoconfigure.jdbc.TestDatabaseAutoConfiguration
+
+
+
+2024-06-20T16:39:59.074-04:00  INFO 3854 --- [rest-demo] [           main] c.t.r.r.CloudVendorRepositoryTest        : Started CloudVendorRepositoryTest in 1.27 seconds (process running for 1.695)
+2024-06-20T16:39:59.414-04:00 DEBUG 3854 --- [rest-demo] [           main] org.hibernate.SQL                        : select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0 where cv1_0.vendor_id=?
+Hibernate: select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0 where cv1_0.vendor_id=?
+2024-06-20T16:39:59.461-04:00 DEBUG 3854 --- [rest-demo] [           main] org.hibernate.SQL                        : insert into cloud_vendor_info (vendor_address,vendor_name,vendor_phone_number,vendor_id) values (?,?,?,?)
+Hibernate: insert into cloud_vendor_info (vendor_address,vendor_name,vendor_phone_number,vendor_id) values (?,?,?,?)
+2024-06-20T16:39:59.464-04:00 DEBUG 3854 --- [rest-demo] [           main] org.hibernate.SQL                        : select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0 where cv1_0.vendor_name=?
+Hibernate: select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0 where cv1_0.vendor_name=?
+2024-06-20T16:39:59.487-04:00 DEBUG 3854 --- [rest-demo] [           main] org.hibernate.SQL                        : select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0
+Hibernate: select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0
+]]></system-out>
+  </testcase>
+  <testcase name="testFindByVendorName_Found" classname="com.thinkconstructive.restdemo.repository.CloudVendorRepositoryTest" time="0.007">
+    <system-out><![CDATA[2024-06-20T16:39:59.496-04:00 DEBUG 3854 --- [rest-demo] [           main] org.hibernate.SQL                        : select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0 where cv1_0.vendor_id=?
+Hibernate: select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0 where cv1_0.vendor_id=?
+2024-06-20T16:39:59.498-04:00 DEBUG 3854 --- [rest-demo] [           main] org.hibernate.SQL                        : insert into cloud_vendor_info (vendor_address,vendor_name,vendor_phone_number,vendor_id) values (?,?,?,?)
+Hibernate: insert into cloud_vendor_info (vendor_address,vendor_name,vendor_phone_number,vendor_id) values (?,?,?,?)
+2024-06-20T16:39:59.499-04:00 DEBUG 3854 --- [rest-demo] [           main] org.hibernate.SQL                        : select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0 where cv1_0.vendor_name=?
+Hibernate: select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0 where cv1_0.vendor_name=?
+2024-06-20T16:39:59.501-04:00 DEBUG 3854 --- [rest-demo] [           main] org.hibernate.SQL                        : select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0
+Hibernate: select cv1_0.vendor_id,cv1_0.vendor_address,cv1_0.vendor_name,cv1_0.vendor_phone_number from cloud_vendor_info cv1_0
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,4 @@
+com/thinkconstructive/restdemo/controller/CloudVendorControllerTest.class
+com/thinkconstructive/restdemo/RestDemoApplicationTests.class
+com/thinkconstructive/restdemo/service/impl/CloudVendorServiceImplTest.class
+com/thinkconstructive/restdemo/repository/CloudVendorRepositoryTest.class
